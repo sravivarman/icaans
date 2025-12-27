@@ -1,115 +1,229 @@
----
-title: Submission
-layout: page
-slide_id: 3
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2 text-justify conference-text">
+    <title>Submission - ICSGET 2022 @ VCE</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <h6 class="text-info">Instructions</h6>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
 
-        <p>
-            Submitted papers must be neither previously published nor under
-            review by another workshop, conference or journal.
-        </p>
+  </head>
 
-        <p>
-            Only electronic submissions in {{site.data.submission.file_formats | join:" or "}} format
-            will be accepted. Submitted articles must be written in
-            {{site.data.submission.languages | join:" or "}}, conforming to the page limit, in
-            {{site.data.submission.fontsize}}-point font and must render without
-            error using standard PDF viewing tools.
-        </p>
-        <p>
-            <b>Page Limit</b>
-            <table class="table border">
-                {% for track in site.data.submission.pagelimits %}
-                <tr>
-                    <td><b>{{track.name}}</b></td>
-                    <td>{{track.limit}} pages</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </p>
+  <body>
 
-        <p>
-            Papers should use the <strong class="text-danger">{{site.data.submission.template.description}}</strong>, available at
-            <a href="{{site.data.submission.template.url}}" target="_blank">
-                <i class="fa fa-external-link fa-fw" aria-hidden="true"></i> {{site.data.submission.template.name}}
-            </a>.
-            {% if site.data.submission.template.overleaf %}The template is also available at
-            <a href="{{site.data.submission.template.overleaf}}" target="_blank">
-                <i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Overleaf
-            </a>
-            {% endif %}
-        </p>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
 
-        {% if site.data.submission.sources %}
-        <p>
-            <h6 class="text-info">Source Files</h6>
-            <ul>
-                {% for source in site.data.submission.sources %}
-                <li>{{source.name}}: <a href="{{source.url}}">{{source.text}}</a></li>
-                {% endfor %}
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><h2><img src="assets/images/Vardhaman_Logo.jpg" alt="" height="70"><em> ICSGET</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="call.html">Call for Paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="committees.html">Committees
+				</a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="speakers.html">Speakers</a>
+              </li>
+			  <li class="nav-item active">
+                <a class="nav-link" href="submission.html">Submission
+				<span class="sr-only">(current)</span>
+				</a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="registration.html">Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
             </ul>
-        </p>
-        {% endif %}
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        {% if site.data.submission.extra %}
-        <p>
-            {{site.data.submission.extra}}
-        </p>
-        {% endif %}
-
-        <p>
-            <h6 class="text-info">Submission</h6>
-            To submit your paper, please follow below link to the submission
-            site:
-        </p>
-
-        <p class="text-center">
-            <a href="{{site.data.submission.url}}">
-                <i class="fa fa-external-link fa-fw" aria-hidden="true"></i>
-                <strong> {{site.data.submission.portal}} </strong>
-            </a>
-        </p>
-
-        <p>
-            Note that at least one of the authors of each paper accepted for
-            presentation in {{site.data.conference.short_title}} must be
-            registered. All papers presented at the workshop will be included in
-            the {{site.data.submission.publisher}}.
-        </p>
-
-        <h6 class="text-info">Camera-Ready Instructions</h6>
-        <p>
-            You will receive the information via your email for camera-ready
-            instructions.
-
-            <!--
-                    The Author's Final Paper Formatting and Submission Instructions can be found at:</p>
-
-                <p style="padding-top: 6px;padding-bottom: 6px;">
-                </p>
-
-                <p>If you encounter any problem, please contact our editor, ____, for assistance.</p>
-
-                    <p>Please note your final camera-ready is due by
-                    <b>September 25, 2015.</b>
-                -->
-
-        </p>
-
-
-        {% include contact-us.html %}
-
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h3>ICSGET 2022</h3>
+              <h4>International Conference on Smart Systems and Green Energy Technologies</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <!--######### important dates ##########-->
-        {% include card-important-dates.html %}
-        <!--####################################-->
+
+
+    <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Submission</h2>
+            </div>
+          </div>
+          <!--div class="col-md-6">
+		  </br></br>
+            <div class="right-image">
+              <img src="assets/images/slide_02.jpg" alt="">
+            </div>
+          </div-->
+          <div class="col-md-12">
+            <div class="left-content">
+			<div class="section-heading">
+              <h2>Important Dates</h2>
+            </div>
+               	<table>
+				  <tr>
+					<td>Full Paper submission deadline</td>
+					<td>Septermber 15, 2022</td>
+				  </tr>
+				  <tr>
+					<td>Review notification</td>
+					<td>October 1, 2022</td>
+				  </tr>
+				  <tr>
+					<td>Registration, Camera ready, Copyright &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</td>
+					<td>October 10, 2022</td>
+				  </tr>
+				  <tr>
+					<td>Conference dates</td>
+					<td>21st and 22nd October 2022</td>
+				  </tr>
+				  <tr>
+				  <td>&emsp;</td>
+				  <td>&emsp;</td>
+				  </tr>
+				  <tr>
+					<td><strong>Submission Link</strong></td>
+					<td><a href="https://easychair.org/conferences/?conf=icsget2022">Click Here For Submission</br> (https://easychair.org/conferences/?conf=icsget2022)<a></td>
+				  </tr>
+				</table>
+            </div>
+          </div>
+		  
+		  <div class="col-md-12">
+            <div class="left-content">
+			</br></br>
+			<div class="section-heading">
+              <h2>Submission Guidelines</h2>
+            </div>
+			  	<strong>Paper submission & review policy</strong></br>
+				Authors are advised to submit their original and unpublished work (related to the conference theme).</br></br>
+				The review process takes into account both the quality of writing and the scientific impact of the work. Authors should clearly identify the problem, explain their contribution(s), and justify the state-of-the-art works. The program committee would like to review those who develop, argue, and provide results.</br></br>
+				Also, note that the team takes care of plagiarism (even self-plagiarism) as serious professional misconduct. All papers will be screened for plagiarism, and the team will reject them in case there exists significant overlap with the previously published papers/papers.</br></br>
+				<strong>Submission guidelines</strong></br>
+				The conference will accept : 1) regular paper - 6 pages, 2) short paper - 4 pages, and 3) review paper - 6 pages. Extra pages will be charged Rs. 800 per page.</br></br>
+				The author should follow the River Publishers Template. The plagiarism shold be below 10%.</br></br>
+				1. Author Guidelines <a href="https://github.com/icsget/icsget2022/raw/df81e90c4a3f7b120ccfb8d1337bd59b717476c2/assets/ICSGET%20Guideline%20for%20Authors%20River%20Publishers%20Journal.pdf">(Download)</a></br></br>
+				2. River Publisher Template <a href="https://github.com/icsget/icsget2022/raw/main/assets/ICSGET%20River%20Publishers%20MS%20Word%20template.doc">(Download)</a></br></br>
+				3. Submission Link <a href="https://easychair.org/conferences/?conf=icsget2022"> (https://easychair.org/conferences/?conf=icsget2022)<a>
+				<h5>Important Note</h5>
+				Regardless of submission types, authors are always advised to submit their original and unpublished work (related to the conference theme).
+				
+				1. The structure of the paper should be presented as</br></br>
+				a) Abstract</br>
+				b) Keywords</br>
+				c) Introduction</br>
+				d) Related Works/Literature Review</br>
+				e) Proposed Methodology</br>
+				f) Implementation</br>
+				g) Results and Discussion</br>
+				h) Conclusion</br>
+				i) Abbreviations </br>
+				j) References</br>
+				k) Authors Biography</br></br>
+				2. Abstract should consist of a minimum of 200 words.</br>
+				3. Keywords should be a minimum of five. </br>
+				4. Related works/Literature Review has to be included with sufficient related findings.</br>
+				5. Proposed work should contain a block diagram/circuit diagram or a schematic flow diagram that depicts the precise flow of the proposed work.</br>
+				6. Implementation should consist of a flowchart/pseudocode/algorithm/ explanation/modeling with equations. (Equations in math editor)</br>
+				7. Results and Discussion should consist of the necessary research findings with a sufficient number of graphs, illustrations, and tabular columns. </br>
+				8. Conclusion should consist of a minimum of 200 words. It has to be a quantitative one. </br>
+            </div>
+          </div>
+		  
+		  
+		  
+        </div>
+      </div>
     </div>
-</div>
+
+     
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2022 ICSGET, VCE
+            
+            - Design: <a rel="nofollow noopener" href="https://sravivarman.com" target="_blank">SRV</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>
