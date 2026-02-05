@@ -283,9 +283,9 @@ header .navbar {
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show>.nav-link {
-	color: #008000;
+	color: #00ff00;
 	padding-bottom: 25px;
-	border-bottom: 3px solid #008000;
+	border-bottom: 3px solid #00ff00;
 	background-color: #232323;
 }
 .navbar .navbar-toggler-icon {
@@ -303,7 +303,7 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #008000;
+	color: #00ff00;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
