@@ -1,7 +1,7 @@
 ---
 title: Classical Mechanics - Newton's Laws of Motion
 published: 2026-02-03
-description: 'Comprehensive overview of Newton's three laws of motion and their applications in classical mechanics'
+description: "Comprehensive overview of Newton's three laws of motion and their applications in classical mechanics"
 tags: [Classical Mechanics, Newton Laws, Physics, Dynamics]
 category: Physics
 draft: false
