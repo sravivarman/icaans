@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>DSN 2022</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header>
+    <a href="#"><img src="images/DSN_logo.png" style="width:65px;" class="w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1 class=w3-text-indigo><b>DSN 2022</b></h1>
+    <h3><b>The 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks</b></h3>
+    <h3 class=w3-text-indigo>Baltimore, Maryland, USA, June 27-30, 2022</h3>
+    </div>
+  </header>
+  
+  <!-- Welcome -->
+  <div class="w3-container w3-padding-large">
+	<div class="w3-card-4 w3-content w3-display-container" style="max-width:800px">
+      <a href="#acknowledgments"><img src="images/Baltimore_Banner.jpg" alt="Baltimore Skyline" style="width:100%"></a>
+    </div>
+    <div class="w3-section w3-bottombar w3-padding-16">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Welcome</b></h4>
+
+	<p>
+	It is our pleasure to invite you to the 52nd edition of the Annual IEEE/IFIP International Conference on Dependable Systems and Networks. After two online editions, DSN 2022 is going back to in-person meeting, to be held in the Renaissance Harborplace Hotel in Baltimore, Maryland, USA. The hotel is located in the heart of the Inner Harbor, home to tourist attractions such as the National Aquarium, Maryland Science Center, and the Port Discovery Children's Museum.
+	</p>
+
+	<p>
+	Over the years, DSN has pioneered the fusion between dependability and security research, understanding the need to simultaneously fight against accidental faults, intentional cyber-attacks, design errors, and unexpected operating conditions. DSN is also providing a fruitful ground for academia and industry interaction.
+	</p>
+
+	<p>
+	The 2022 edition offers an attractive program. The first day features 3 workshops: Data-Centric Dependability and Security, Dependable and Secure Machine Learning, and Safety and Security of Intelligent Vehicles. The following three days are dedicated to research track presentations, an industry track, fast abstracts, and student forum presentations and discussions.
+	</p>
+
+	<p>
+	This year we have three outstanding keynote speakers. Elaine Shi, Carnegie Mellon University, will present “Foundations of Transaction Fee Mechanism Design”. Nicholas Carlini, Google Brain, will talk about “Machine learning is becoming less dependable”. Franck Capello, Argonne National Laboratory, will present “Resilience and fault tolerance for extreme-scale scientific computing”.
+	</p>
+
+	<p>
+	The program features the announcement of several awards: the William C. Carter dissertation award, the Jean-Claude Laprie awards, the Test-of-Time Award, and the Rising Star Award. The Best Paper Award will be decided by the conference attendees during the first technical session out of three candidate papers selected by the Program Committee and Steering Committee.
+	</p>
+
+	<p>
+	Last, but not least, the program includes a session dedicated to our colleague and friend Gilles Muller, celebrating his research and his contributions to the DSN community over the years.
+	</p>
+
+	<p>
+	The DSN conference would not have been possible without the support, hard work, and dedication of the steering committee, organizing committee, program committees, and the volunteers. Many thanks to our sponsors, IEEE, IFIP, Siemens, Johns Hopkins University, KAUST, Intel, and Lancaster University.
+	</p>
+
+	<p>
+	Yair Amir, Johns Hopkins University<br>
+	Cristina Nita-Rotaru, Northeastern University<br>
+	DSN 2022 General Chairs
+	</p>
+
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors</h3>
+    <div class="w3-half">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-half">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Banner image courtesy of <a href="https://commons.wikimedia.org/wiki/File:A_panoramic_view_of_the_Baltimore_Inner_Harbor.jpg">Bruce Emmerling</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons<br>
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

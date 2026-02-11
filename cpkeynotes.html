@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>Keynotes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="dsnHeader">
+    <div w3-include-html="header.html"></div>
+  </header>
+  
+  <div class="w3-container w3-padding-large" style="align:center; margin-bottom:32px; text-align:justify">
+    <h1><b>Keynotes</b></h1>
+	<br>
+        <!-- First Keynote -->
+        <div class="w3-card-4">
+            <header class="w3-container w3-padding w3-theme-d2">
+                <span class="title">Foundations of Transaction Fee Mechanism Design</span><br />
+                <span class="author"><a href="https://cylab.cmu.edu/directory/bios/shi-elaine.html" target="_blank">Elaine Shi</a></span>, 
+                <span class="affiliation">Carnegie Mellon University</span>
+            </header>
+            <div class="w3-container">
+                
+                <p align="justify">
+                Space in a blockchain is a scarce resource. Cryptocurrencies
+                today use auctions to decide which transactions get confirmed
+                in the block. Intriguingly, classical auctions fail in such a
+                decentralized environment, since even the auctioneer can be a
+                strategic player. For example, the second-price auction is a
+                golden standard in classical mechanism design. It fails,
+                however, in the blockchain environment since the miner can
+                easily inject a bid that is epsilon smaller than the k-th price
+                where k is the block size. Moreover, the miner and users can
+                also collude through the smart contract mechanisms available in
+                modern cryptocurrencies.
+                </p>
+
+                <p align="justify">
+                I will talk about a new foundation for mechanism design in a decentralized
+                environment. I will prove an impossibility result which rules out the existence
+                of a dream transaction fee mechanism that incentivizes honest behavior for the
+                user, the miner, and a miner-user coalition at the same time. I will then argue
+                why the prior modeling choices are too draconian, and how we can overcome this
+                lower bound by capturing hidden costs pertaining to certain deviations.
+                </p>
+                
+                
+                <img src="./images/key3.png" alt="Elaine Shi" class="w3-left w3-circle w3-margin-right" style="width:25%">
+                <p align="justify">
+                Elaine Shi is an Associate Professor at Carnegie Mellon
+                University. Her research interests include cryptography,
+                algorithms, and foundations of blockchains. Prior to CMU, she
+                taught at the University of Maryland and Cornell University.
+                She is a recipient of the Packard Fellowship, the Sloan
+                Fellowship, the ONR YIP Award, the NSA best scientific
+                cybersecurity paper award, and various other best paper awards.
+                </p>
+            </div>
+            <br>
+        </div>
+		
+		<br><br>
+
+        <!-- Second Keynote -->
+        <div class="w3-card-4">
+            <header class="w3-container w3-padding w3-theme-d2">
+                <span class="title">Machine learning is becoming less dependable</span><br />
+                <span class="author"><a href="https://nicholas.carlini.com/" target="_blank">Nicholas Carlini</a></span>, 
+                <span class="affiliation">Google Brain</span>
+            </header>
+            <div class="w3-container">
+                
+                <p align="justify">
+                Machine learning has seen incredible progress over the past few
+                years, and problems once seen as science fiction are now nearly
+                trivial. However current machine learning systems lack one
+                important property: dependability. In this talk I examine the
+                (lack of) dependability in modern machine learning techniques
+                when evaluated in adversarial environments. And if we continue
+                in the current direction, I argue future machine learning
+                systems will be less reliable in the future.
+                </p>
+                
+                
+                <img src="./images/key2.jpg" alt="Nicholas Carlini" class="w3-left w3-circle w3-margin-right" style="width:25%">
+                <p align="justify">
+                Nicholas Carlini is a research scientist at Google Brain. He
+                studies the security and privacy of machine learning, and for
+                this has received best paper awards at ICML, USENIX Security
+                and IEEE S&P. He obtained his PhD from the University of
+                California, Berkeley in 2018
+                </p>
+            </div>
+            <br>
+        </div>
+		
+		<br><br>
+  
+        <!-- Third Keynote -->
+        <div class="w3-card-4">
+            <header class="w3-container w3-padding w3-theme-d2">
+                <span class="title">Resilience and fault tolerance for extreme-scale scientific computing</span><br />
+                <span class="author"><a href="https://www.anl.gov/profile/franck-cappello" target="_blank">Franck Cappello</a></span>, 
+                <span class="affiliation">Argonne National Laboratory</span>
+            </header>
+            <div class="w3-container">
+                
+                <p align="justify">
+                Exascale scientific computing is a fierce international
+                competition that started circa 2007. Since that time and for
+                about 15 years, the research on resilience and fault tolerance
+                for exascale computing has explored many territories, including
+                the characterization of faults, errors, and failures in large
+                HPC systems and a wide variety of mitigation methods. We will
+                review the main results of this intense analysis and
+                exploration period, which produced the foundations for the
+                solutions that will be used on the exascale systems in the
+                United States. However, the community now is facing an
+                important new problem: Many numerical simulations will generate
+                a huge flow of data that is too large to store, communicate,
+                and analyze completely. Data reduction and, in particular,
+                lossy reduction and compression of scientific data become a
+                necessity. Because lossy data reduction removes information, it
+                may directly affect numerical simulation correctness and thus
+                the dependability of results. A critical question thus arises:
+                How can we reduce scientific data by one or more orders of
+                magnitude while keeping the same science and the same
+                predictions? We will discuss this important new trend and the
+                new results concerning scientific data reduction methods and
+                methods to assess the correctness of results produced from
+                lossy-reduced scientific data.
+                </p>
+                
+                
+                <img src="./images/key1.png" alt="Franck Cappello" class="w3-left w3-circle w3-margin-right" style="width:25%">
+                <p align="justify">
+                Franck Cappello is senior computer scientist and R&D lead at
+                Argonne National laboratory. Franck started working on fault
+                tolerance for high performance scientific computing more than
+                20 year ago. With his students and collaborators, he explored
+                many different and complementary aspects of resilience and
+                fault tolerance for scientific computing at extreme scale:
+                fault/error/failure characterization, checkpointing, fault
+                tolerance protocols, optimal checkpoint scheduling, silent data
+                corruption detection and mitigation, failure prediction
+                producing about 100 international publications on this domain.
+                He led the resilience topic of the International Exascale
+                Software Project and the European Exascale Software Initiative
+                that identified critical challenges of exascale computing in US
+                and Europe. Franck leads the VeloC innovative asynchronous
+                multi-level checkpointing project funded by the U.S. Exascale
+                Computing Project (ECP) that will serve applications running on
+                the US exascale systems. From 2016 and with the support of ECP,
+                he started exploring lossy compression for scientific computing
+                to address the increasing discrepancy between scientific
+                application data set sizes and the capacities of HPC storage
+                infrastructures. This research produced the SZ lossy compressor
+                and Z-checker tool to assess the nature of lossy compression
+                errors. Franck is IEEE fellow and recipient of two prestigious
+                R&D100 awards, the 2018 IEEE TCPP Outstanding Service Award and
+                the 2021 IEEE Transactions in Computers Award for Editorial
+                Service and Excellence.
+                </p>
+            </div>
+            <br>
+        </div>
+
+        <br><br>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors</h3>
+    <div class="w3-half">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-half">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
